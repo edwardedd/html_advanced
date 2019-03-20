@@ -1,11 +1,15 @@
 .bg_image {
 	background-image: url("../img/ironbg-1.jpg");
-	height: 900px;
-	width: 1440px;
+	height: 100vh;
+	width: 100vw;
 	display: flex;	
 	justify-content: center;
 	align-items: center ;
 	flex-direction: column;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
 }
 .wrapper_content {
 	height: 700px;
@@ -153,9 +157,12 @@ padding-top: 130px;
 	height: 770px;
 	background-image: url("../img/ironm_1.png");
 	background-size: cover;
-	position: relative;
+	position: absolute;
 	z-index: 2;
-	top:-610px;
+	top:-0px;
 	left: 193px;
 
+}
+.carousel-inner{
+	overflow: inherit;
 }
